@@ -1,0 +1,17 @@
+# Data and secrets
+data/
+*.env
+.env*
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
