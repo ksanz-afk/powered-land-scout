@@ -7,7 +7,9 @@ import { SampleBadge, ScoreBadge } from "@/components/score-badge";
 import { SitesMap } from "@/components/sites-map";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { getCounty, getProposalsBySite, getSite, getSites } from "@/lib/data";
-import { titleCase } from "@/lib/format";
+import { pct, titleCase } from "@/lib/format";
+
+import { ScoreBreakdown } from "../_components/score-breakdown";
 
 export async function generateStaticParams() {
   const sites = await getSites();
@@ -26,13 +28,19 @@ export default async function SitePage(props: PageProps<"/sites/[id]">) {
   if (!site) notFound();
   const [county, proposals] = await Promise.all([getCounty(site.fips), getProposalsBySite(site.id)]);
 
+  const show = (value: number | null, unit: string) => (value === null ? "Unknown" : `${value} ${unit}`);
   const facts = [
-    { label: "Estimated available power", value: `${site.est_available_mw} MW` },
-    { label: "Nearest substation", value: `${site.substation_kv} kV, ${site.nearest_substation_km} km` },
-    { label: "Parcel size", value: `${site.acres} acres` },
-    { label: "Fiber distance", value: `${site.fiber_km} km` },
+    { label: "Power proxy (from voltage class)", value: `~${site.est_available_mw} MW` },
+    {
+      label: "Nearest substation",
+      value:
+        site.substation_kv === null ? "Unknown" : `${site.substation_kv} kV, ${show(site.nearest_substation_km, "km")}`,
+    },
+    { label: "Parcel size", value: show(site.acres, "acres") },
+    { label: "Fiber distance", value: show(site.fiber_km, "km") },
     { label: "Water risk", value: titleCase(site.water_risk) },
     { label: "Zoning", value: site.zoning },
+    { label: "Data confidence", value: pct(site.confidence) },
   ];
 
   return (
@@ -66,6 +74,7 @@ export default async function SitePage(props: PageProps<"/sites/[id]">) {
           </CardContent>
         </Card>
       </div>
+      <ScoreBreakdown site={site} />
       {site.notes ? <p className="text-sm text-muted-foreground">{site.notes}</p> : null}
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Proposals for this site</h2>

@@ -43,7 +43,7 @@ export default async function ProposalPage(props: PageProps<"/proposals/[id]">) 
           </CardHeader>
           {site ? (
             <CardContent className="flex items-center gap-2 text-sm">
-              Score <ScoreBadge score={site.score} /> · {site.est_available_mw} MW est.
+              Score <ScoreBadge score={site.score} /> · ~{site.est_available_mw} MW proxy
             </CardContent>
           ) : null}
         </Card>

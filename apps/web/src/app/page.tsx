@@ -17,7 +17,7 @@ export default async function OverviewPage() {
   const stats = [
     { label: "Communities", value: counties.length, href: "/counties" },
     { label: "Candidate sites", value: sites.length, href: "/sites" },
-    { label: "Est. available MW", value: totalMw.toLocaleString(), href: "/sites" },
+    { label: "MW proxy (by voltage class)", value: totalMw.toLocaleString(), href: "/sites" },
     { label: "Draft proposals", value: proposals.length, href: "/proposals" },
   ];
 

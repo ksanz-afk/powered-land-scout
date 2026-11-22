@@ -30,7 +30,7 @@ export default async function SitesPage() {
               <TableHead>Site</TableHead>
               <TableHead>County</TableHead>
               <TableHead className="text-right">Score</TableHead>
-              <TableHead className="text-right">Est. MW</TableHead>
+              <TableHead className="text-right">MW proxy</TableHead>
               <TableHead className="text-right">Substation</TableHead>
               <TableHead className="text-right">Acres</TableHead>
               <TableHead>Water risk</TableHead>
@@ -57,9 +57,9 @@ export default async function SitesPage() {
                 </TableCell>
                 <TableCell className="text-right tabular-nums">{site.est_available_mw}</TableCell>
                 <TableCell className="text-right tabular-nums">
-                  {site.substation_kv} kV · {site.nearest_substation_km} km
+                  {site.substation_kv === null ? "—" : `${site.substation_kv} kV · ${site.nearest_substation_km ?? "?"} km`}
                 </TableCell>
-                <TableCell className="text-right tabular-nums">{site.acres}</TableCell>
+                <TableCell className="text-right tabular-nums">{site.acres ?? "—"}</TableCell>
                 <TableCell>{titleCase(site.water_risk)}</TableCell>
               </TableRow>
             ))}

@@ -29,7 +29,7 @@ export function SitesMap({ sites, height = 420 }: { sites: Site[]; height?: numb
       bounds.extend([site.lng, site.lat]);
       const popup = new maplibregl.Popup({ offset: 12 }).setHTML(
         `<a href="/sites/${site.id}" style="font-weight:600">${escapeHtml(site.name)}</a>` +
-          `<div style="font-size:12px;margin-top:2px">Score ${site.score} · ${site.est_available_mw} MW est.</div>`,
+          `<div style="font-size:12px;margin-top:2px">Score ${site.score} · ~${site.est_available_mw} MW proxy</div>`,
       );
       new maplibregl.Marker({ color: site.score >= 75 ? "#059669" : site.score >= 60 ? "#2563eb" : "#71717a" })
         .setLngLat([site.lng, site.lat])
