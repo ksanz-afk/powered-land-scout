@@ -1,0 +1,4 @@
+[
+  {"id":"prop-48441-a","site_id":"site-48441-a","issue_ids":["iss-48441-1","iss-48441-2"],"title":"Sample: Water-positive campus with county road fund","pitch":"Illustrative sample. A closed-loop cooling design paired with a county road-repair fund, sized to the project's tax contribution.","commitments":["Closed-loop cooling (illustrative)","Annual road-repair fund (illustrative)"],"status":"draft","is_sample":true},
+  {"id":"prop-53025-b","site_id":"site-53025-b","issue_ids":["iss-53025-1","iss-53025-2"],"title":"Sample: Aquifer monitoring and school partnership","pitch":"Illustrative sample. Public aquifer monitoring plus a technical-education partnership with local schools.","commitments":["Public water-use dashboard (illustrative)","School technical program (illustrative)"],"status":"draft","is_sample":true}
+]

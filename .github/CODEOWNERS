@@ -1,0 +1,14 @@
+# Shared contract: both owners review
+/db/                          @ksanz-afk @dhruvtandon1
+/apps/web/src/lib/            @ksanz-afk @dhruvtandon1
+/CLAUDE.md                    @ksanz-afk @dhruvtandon1
+
+# Kat
+/pipelines/sites/             @ksanz-afk
+/apps/web/src/app/sites/      @ksanz-afk
+/apps/web/src/app/proposals/  @ksanz-afk
+
+# Dhruv
+/pipelines/community/         @dhruvtandon1
+/apps/web/src/app/counties/   @dhruvtandon1
+/apps/web/src/app/learn/      @dhruvtandon1

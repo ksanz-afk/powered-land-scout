@@ -1,0 +1,6 @@
+[
+  {"fips":"51107","name":"Loudoun County","state":"VA","population":null,"lat":39.0768,"lng":-77.6536,"summary":"The densest data center market in the world, with growing local debate over transmission lines, noise and land use."},
+  {"fips":"47157","name":"Shelby County","state":"TN","population":null,"lat":35.1495,"lng":-90.0490,"summary":"Memphis area. Home of xAI's Colossus, a widely cited example of community backlash over on-site gas turbines, emissions and noise."},
+  {"fips":"53025","name":"Grant County","state":"WA","population":null,"lat":47.2343,"lng":-119.8526,"summary":"Quincy area. Cheap hydropower drew early data centers; residents' early support has been tested by water use and noise."},
+  {"fips":"48441","name":"Taylor County","state":"TX","population":null,"lat":32.4487,"lng":-99.7331,"summary":"Abilene area. Most Texas counties have no zoning, which makes development faster and community input less formal."}
+]

@@ -1,0 +1,7 @@
+export function pct(share: number): string {
+  return `${Math.round(share * 100)}%`;
+}
+
+export function titleCase(value: string): string {
+  return value.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
