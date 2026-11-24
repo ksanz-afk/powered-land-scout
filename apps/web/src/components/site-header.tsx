@@ -1,25 +1,22 @@
 import Link from "next/link";
 
-const NAV = [
-  { href: "/sites", label: "Sites" },
-  { href: "/counties", label: "Communities" },
-  { href: "/proposals", label: "Proposals" },
-  { href: "/learn", label: "Learn" },
-];
-
 export function SiteHeader() {
   return (
-    <header className="border-b bg-background">
-      <div className="mx-auto flex h-14 max-w-6xl items-center gap-6 px-4 sm:px-6">
-        <Link href="/" className="font-semibold tracking-tight">
+    <header className="sticky top-0 z-40 border-b border-black/5 bg-white/70 backdrop-blur-xl">
+      <div className="mx-auto flex h-12 max-w-6xl items-center justify-between px-5 sm:px-8">
+        <Link href="/" className="text-[15px] font-semibold tracking-tight">
           Powered Land Scout
         </Link>
-        <nav className="flex items-center gap-4 text-sm text-muted-foreground">
-          {NAV.map((item) => (
-            <Link key={item.href} href={item.href} className="transition-colors hover:text-foreground">
-              {item.label}
-            </Link>
-          ))}
+        <nav className="flex items-center gap-6 text-[13px] text-muted-foreground">
+          <Link href="/" className="transition-colors hover:text-foreground">
+            Explore
+          </Link>
+          <Link href="/learn" className="transition-colors hover:text-foreground">
+            Learn
+          </Link>
+          <span className="rounded-full bg-black/[0.04] px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
+            Demo data
+          </span>
         </nav>
       </div>
     </header>

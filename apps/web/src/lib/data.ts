@@ -112,6 +112,13 @@ export async function getProposalsBySite(siteId: string): Promise<Proposal[]> {
   return proposals.filter((p) => p.site_id === siteId);
 }
 
+export async function getProposalsByCounty(fips: string): Promise<Proposal[]> {
+  "use cache";
+  cacheLife("hours");
+  const siteIds = new Set(sites.filter((s) => s.fips === fips).map((s) => s.id));
+  return proposals.filter((p) => siteIds.has(p.site_id));
+}
+
 // Education (Dhruv)
 export async function getEducation(fips: string | null): Promise<EducationContent[]> {
   "use cache";

@@ -1,0 +1,156 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+import { BarList } from "@/components/bar-list";
+import { SampleBadge } from "@/components/score-badge";
+import { ScoreTile } from "@/components/score-tile";
+import { Panel } from "@/components/section";
+import { SentimentBar } from "@/components/sentiment-bar";
+import {
+  getCounty,
+  getIssues,
+  getIssuesByCounty,
+  getProposalsByCounty,
+  getSentiment,
+  getSignalsByCounty,
+  getSites,
+} from "@/lib/data";
+import { pct, titleCase } from "@/lib/format";
+import { communityScore } from "@/lib/scores";
+
+export async function generateMetadata(props: PageProps<"/explore/[fips]/community">): Promise<Metadata> {
+  const { fips } = await props.params;
+  const county = await getCounty(fips);
+  return { title: county ? `Community · ${county.name}` : "Community" };
+}
+
+export default async function CommunityPage(props: PageProps<"/explore/[fips]/community">) {
+  const { fips } = await props.params;
+  const [sentiment, issues, signals, proposals, sites] = await Promise.all([
+    getSentiment(fips),
+    getIssuesByCounty(fips),
+    getSignalsByCounty(fips),
+    getProposalsByCounty(fips),
+    getSites(),
+  ]);
+  const score = communityScore(sentiment);
+  const issueLookup = await getIssues(proposals.flatMap((p) => p.issue_ids));
+  const clean = (text: string) => text.replace(/^Sample:\s*/, "");
+
+  return (
+    <div className="space-y-8">
+      <div className="grid gap-6 lg:grid-cols-[1fr_1.4fr]">
+        <ScoreTile
+          title="Community Sentiment Score"
+          tone="community"
+          score={score}
+          caption={
+            !sentiment
+              ? "Not analyzed yet."
+              : sentiment.signal_count === 0
+                ? "Sample estimate until public signals are collected. 50 is balanced; higher is more supportive."
+                : `Based on ${sentiment.signal_count} public signals. 50 is balanced; higher is more supportive.`
+          }
+        />
+        <Panel title="How residents talk about data centers">
+          {sentiment ? (
+            <div className="space-y-6">
+              <SentimentBar support={sentiment.support_share} oppose={sentiment.oppose_share} size="lg" />
+              <div>
+                <p className="text-sm font-medium text-muted-foreground">Most-raised concerns</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {sentiment.top_concerns.map((c) => (
+                    <span key={c} className="rounded-full bg-black/[0.04] px-3 py-1 text-sm capitalize">
+                      {c}
+                    </span>
+                  ))}
+                  <SampleBadge show={sentiment.is_sample} />
+                </div>
+              </div>
+            </div>
+          ) : (
+            <p className="text-sm text-muted-foreground">No sentiment data for this county yet.</p>
+          )}
+        </Panel>
+      </div>
+
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Panel
+          title="Recent topics of interest"
+          subtitle="Local issues beyond data centers, ranked by how much residents raise them"
+        >
+          <BarList
+            items={issues.map((i) => ({
+              key: i.id,
+              label: clean(i.issue),
+              value: i.salience,
+              note: `${titleCase(i.category)} · ${pct(i.salience)}`,
+            }))}
+            empty="No topics collected yet."
+          />
+        </Panel>
+        <Panel title="What people are saying" subtitle="Short excerpts from public sources">
+          {signals.length === 0 ? (
+            <p className="text-sm text-muted-foreground">No signals collected yet.</p>
+          ) : (
+            <ul className="space-y-4">
+              {signals.map((sig) => (
+                <li key={sig.id} className="rounded-2xl bg-black/[0.03] p-4">
+                  <p className="text-[15px]">&ldquo;{sig.excerpt}&rdquo;</p>
+                  <p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
+                    {titleCase(sig.stance_on_dc)} · {sig.source}
+                    <SampleBadge show={sig.is_sample} />
+                  </p>
+                </li>
+              ))}
+            </ul>
+          )}
+        </Panel>
+      </div>
+
+      <section className="space-y-5">
+        <div>
+          <h2 className="text-2xl font-semibold">Potential projects</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Strong parcels paired with commitments on what this community cares about
+          </p>
+        </div>
+        {proposals.length === 0 ? (
+          <Panel>
+            <p className="text-sm text-muted-foreground">No projects proposed for this county yet.</p>
+          </Panel>
+        ) : (
+          <div className="grid gap-6 md:grid-cols-2">
+            {proposals.map((p) => {
+              const site = sites.find((s) => s.id === p.site_id);
+              const addressed = issueLookup.filter((i) => p.issue_ids.includes(i.id));
+              return (
+                <Link
+                  key={p.id}
+                  href={`/proposals/${p.id}`}
+                  className="flex flex-col rounded-[28px] bg-white p-7 shadow-[0_2px_20px_rgba(0,0,0,0.05)] ring-1 ring-black/5 transition hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
+                >
+                  <p className="text-sm text-muted-foreground">{site ? clean(site.name) : "Site"}</p>
+                  <h3 className="mt-2 text-xl font-semibold">{clean(p.title)}</h3>
+                  <p className="mt-3 text-[15px] leading-relaxed text-foreground/80">{p.pitch}</p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {addressed.map((i) => (
+                      <span key={i.id} className="rounded-full bg-[var(--viz-community-track)] px-3 py-1 text-sm">
+                        {clean(i.issue)}
+                      </span>
+                    ))}
+                    <SampleBadge show={p.is_sample} />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        )}
+      </section>
+
+      <Link href={`/learn/${fips}`} className="inline-block text-sm text-muted-foreground hover:text-foreground">
+        Resident education for this county →
+      </Link>
+    </div>
+  );
+}
