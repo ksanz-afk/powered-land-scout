@@ -15,20 +15,31 @@ export type County = {
 
 export type WaterRisk = "low" | "medium" | "high";
 
+export type ScoreFactor = {
+  label: string;
+  value: string | number | boolean | null;
+  normalized: number;
+  weight: number;
+  points: number;
+  known: boolean;
+};
+
 export type Site = {
   id: string;
   fips: Fips;
   name: string;
   lat: number;
   lng: number;
-  acres: number;
-  nearest_substation_km: number;
-  substation_kv: number;
+  acres: number | null;
+  nearest_substation_km: number | null;
+  substation_kv: number | null;
   est_available_mw: number;
-  fiber_km: number;
+  fiber_km: number | null;
   water_risk: WaterRisk;
   zoning: string;
   score: number;
+  score_breakdown: Record<string, ScoreFactor>;
+  confidence: number;
   notes: string;
   is_sample: boolean;
 };
