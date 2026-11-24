@@ -1,0 +1,14 @@
+[
+  {"id":"iss-51107-1","fips":"51107","issue":"Sample: Traffic and road capacity","category":"infrastructure","salience":0.8,"summary":"Illustrative sample. Replace with community-pipeline output.","signal_count":0,"is_sample":true},
+  {"id":"iss-51107-2","fips":"51107","issue":"Sample: School capacity","category":"education","salience":0.6,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-51107-3","fips":"51107","issue":"Sample: Electricity rates","category":"energy_costs","salience":0.5,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-47157-1","fips":"47157","issue":"Sample: Air quality","category":"health","salience":0.9,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-47157-2","fips":"47157","issue":"Sample: Local job training","category":"jobs","salience":0.7,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-47157-3","fips":"47157","issue":"Sample: Road repair backlog","category":"infrastructure","salience":0.5,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-53025-1","fips":"53025","issue":"Sample: Groundwater and aquifer levels","category":"water","salience":0.9,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-53025-2","fips":"53025","issue":"Sample: School funding","category":"education","salience":0.6,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-53025-3","fips":"53025","issue":"Sample: Affordable housing","category":"housing","salience":0.5,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-48441-1","fips":"48441","issue":"Sample: Water supply reliability","category":"water","salience":0.8,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-48441-2","fips":"48441","issue":"Sample: Rural road condition","category":"infrastructure","salience":0.7,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
+  {"id":"iss-48441-3","fips":"48441","issue":"Sample: Skilled jobs for young residents","category":"jobs","salience":0.6,"summary":"Illustrative sample.","signal_count":0,"is_sample":true}
+]

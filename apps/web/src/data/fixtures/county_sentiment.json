@@ -1,0 +1,6 @@
+[
+  {"fips":"51107","support_share":0.35,"oppose_share":0.50,"signal_count":0,"top_concerns":["noise","transmission lines","land use"],"is_sample":true},
+  {"fips":"47157","support_share":0.25,"oppose_share":0.60,"signal_count":0,"top_concerns":["air quality","noise","energy costs"],"is_sample":true},
+  {"fips":"53025","support_share":0.45,"oppose_share":0.40,"signal_count":0,"top_concerns":["water use","noise","tax base"],"is_sample":true},
+  {"fips":"48441","support_share":0.60,"oppose_share":0.25,"signal_count":0,"top_concerns":["water supply","roads","jobs"],"is_sample":true}
+]

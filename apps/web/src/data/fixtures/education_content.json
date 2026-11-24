@@ -1,0 +1,5 @@
+[
+  {"id":"edu-general-1","fips":null,"topic":"data_centers","title":"What a data center is, and what it needs from a community","body":"Sample content. Explain power, water, land, jobs and tax impacts in plain language. Replace with education-hub content.","is_sample":true},
+  {"id":"edu-53025-1","fips":"53025","topic":"water","title":"How data center cooling uses water","body":"Sample content. Compare evaporative and closed-loop cooling, with local context.","is_sample":true},
+  {"id":"edu-47157-1","fips":"47157","topic":"health","title":"On-site power and local air quality","body":"Sample content. Explain how on-site generation choices affect emissions.","is_sample":true}
+]

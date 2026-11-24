@@ -1,0 +1,6 @@
+[
+  {"id":"sig-51107-1","fips":"51107","source":"sample","source_url":null,"published_at":null,"stance_on_dc":"oppose","topic":"infrastructure","excerpt":"Illustrative sample signal. Replace with community-pipeline output.","is_sample":true},
+  {"id":"sig-47157-1","fips":"47157","source":"sample","source_url":null,"published_at":null,"stance_on_dc":"oppose","topic":"health","excerpt":"Illustrative sample signal.","is_sample":true},
+  {"id":"sig-53025-1","fips":"53025","source":"sample","source_url":null,"published_at":null,"stance_on_dc":"neutral","topic":"water","excerpt":"Illustrative sample signal.","is_sample":true},
+  {"id":"sig-48441-1","fips":"48441","source":"sample","source_url":null,"published_at":null,"stance_on_dc":"support","topic":"jobs","excerpt":"Illustrative sample signal.","is_sample":true}
+]
