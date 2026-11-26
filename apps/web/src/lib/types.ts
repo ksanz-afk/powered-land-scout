@@ -99,6 +99,8 @@ export type Proposal = {
   title: string;
   pitch: string;
   commitments: string[];
+  rationale: string[];
+  community_fit: number;
   status: ProposalStatus;
   is_sample: boolean;
 };

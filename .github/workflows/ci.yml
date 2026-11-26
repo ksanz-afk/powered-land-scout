@@ -36,3 +36,7 @@ jobs:
       - run: python run.py --check
         working-directory: pipelines/sites
       - run: python pipelines/community/run.py --check
+      - run: python -m unittest discover -s tests -t . -v
+        working-directory: pipelines/proposer
+      - run: python run.py --check
+        working-directory: pipelines/proposer
