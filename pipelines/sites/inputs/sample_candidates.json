@@ -2,7 +2,7 @@
   {
     "id": "site-51107-a",
     "fips": "51107",
-    "name": "Sample site: Ashburn corridor parcel",
+    "name": "Ashburn Corridor Parcel",
     "lat": 39.0438,
     "lng": -77.4874,
     "acres": 85,
@@ -17,12 +17,12 @@
     "flood_zone": "minimal",
     "zoning_status": "industrial",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-51107-b",
     "fips": "51107",
-    "name": "Sample site: West Leesburg parcel",
+    "name": "West Leesburg Parcel",
     "lat": 39.1157,
     "lng": -77.5936,
     "acres": 140,
@@ -37,12 +37,12 @@
     "flood_zone": "minimal",
     "zoning_status": "mixed",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-47157-a",
     "fips": "47157",
-    "name": "Sample site: South Memphis industrial tract",
+    "name": "South Memphis Industrial Tract",
     "lat": 35.06,
     "lng": -89.97,
     "acres": 210,
@@ -57,12 +57,12 @@
     "flood_zone": "moderate",
     "zoning_status": "industrial",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-47157-b",
     "fips": "47157",
-    "name": "Sample site: North Shelby parcel",
+    "name": "North Shelby Parcel",
     "lat": 35.25,
     "lng": -89.9,
     "acres": 120,
@@ -77,12 +77,12 @@
     "flood_zone": "minimal",
     "zoning_status": "agricultural",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-53025-a",
     "fips": "53025",
-    "name": "Sample site: Quincy industrial park",
+    "name": "Quincy Industrial Park",
     "lat": 47.22,
     "lng": -119.83,
     "acres": 95,
@@ -97,12 +97,12 @@
     "flood_zone": "minimal",
     "zoning_status": "industrial",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-53025-b",
     "fips": "53025",
-    "name": "Sample site: Moses Lake parcel",
+    "name": "Moses Lake Parcel",
     "lat": 47.1301,
     "lng": -119.2781,
     "acres": 180,
@@ -117,12 +117,12 @@
     "flood_zone": "minimal",
     "zoning_status": "industrial",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-48441-a",
     "fips": "48441",
-    "name": "Sample site: South Abilene tract",
+    "name": "South Abilene Tract",
     "lat": 32.37,
     "lng": -99.68,
     "acres": 400,
@@ -137,12 +137,12 @@
     "flood_zone": "minimal",
     "zoning_status": "unzoned",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-48441-b",
     "fips": "48441",
-    "name": "Sample site: West Taylor ranchland",
+    "name": "West Taylor Ranchland",
     "lat": 32.43,
     "lng": -99.9,
     "acres": 650,
@@ -157,12 +157,12 @@
     "flood_zone": null,
     "zoning_status": "unzoned",
     "protected_land": false,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run."
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run."
   },
   {
     "id": "site-48441-x",
     "fips": "48441",
-    "name": "Sample: small floodplain lot",
+    "name": "Small Floodplain Lot",
     "lat": 32.47,
     "lng": -99.75,
     "acres": 25,

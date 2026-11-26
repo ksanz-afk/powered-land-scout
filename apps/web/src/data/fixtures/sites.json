@@ -2,7 +2,7 @@
   {
     "id": "site-51107-a",
     "fips": "51107",
-    "name": "Sample site: Ashburn corridor parcel",
+    "name": "Ashburn Corridor Parcel",
     "lat": 39.0438,
     "lng": -77.4874,
     "acres": 85,
@@ -23,7 +23,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 230,
         "normalized": 0.85,
         "weight": 0.2,
@@ -31,7 +31,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -63,7 +63,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 1.5,
         "normalized": 0.725,
         "weight": 0.1,
@@ -71,7 +71,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": "minimal",
         "normalized": 1.0,
         "weight": 0.05,
@@ -88,13 +88,13 @@
       }
     },
     "confidence": 0.95,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   },
   {
     "id": "site-47157-a",
     "fips": "47157",
-    "name": "Sample site: South Memphis industrial tract",
+    "name": "South Memphis Industrial Tract",
     "lat": 35.06,
     "lng": -89.97,
     "acres": 210,
@@ -115,7 +115,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 161,
         "normalized": 0.7,
         "weight": 0.2,
@@ -123,7 +123,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -155,7 +155,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 1.0,
         "normalized": 0.85,
         "weight": 0.1,
@@ -163,7 +163,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": "moderate",
         "normalized": 0.6,
         "weight": 0.05,
@@ -180,13 +180,13 @@
       }
     },
     "confidence": 0.95,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   },
   {
     "id": "site-48441-a",
     "fips": "48441",
-    "name": "Sample site: South Abilene tract",
+    "name": "South Abilene Tract",
     "lat": 32.37,
     "lng": -99.68,
     "acres": 400,
@@ -207,7 +207,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 345,
         "normalized": 1.0,
         "weight": 0.2,
@@ -215,7 +215,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -247,7 +247,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 2.5,
         "normalized": 0.475,
         "weight": 0.1,
@@ -255,7 +255,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": "minimal",
         "normalized": 1.0,
         "weight": 0.05,
@@ -272,13 +272,13 @@
       }
     },
     "confidence": 0.95,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   },
   {
     "id": "site-53025-b",
     "fips": "53025",
-    "name": "Sample site: Moses Lake parcel",
+    "name": "Moses Lake Parcel",
     "lat": 47.1301,
     "lng": -119.2781,
     "acres": 180,
@@ -299,7 +299,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 230,
         "normalized": 0.85,
         "weight": 0.2,
@@ -307,7 +307,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -339,7 +339,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 3.5,
         "normalized": 0.225,
         "weight": 0.1,
@@ -347,7 +347,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": "minimal",
         "normalized": 1.0,
         "weight": 0.05,
@@ -364,13 +364,13 @@
       }
     },
     "confidence": 0.95,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   },
   {
     "id": "site-53025-a",
     "fips": "53025",
-    "name": "Sample site: Quincy industrial park",
+    "name": "Quincy Industrial Park",
     "lat": 47.22,
     "lng": -119.83,
     "acres": 95,
@@ -391,7 +391,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 115,
         "normalized": 0.5,
         "weight": 0.2,
@@ -399,7 +399,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -431,7 +431,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 3.5,
         "normalized": 0.225,
         "weight": 0.1,
@@ -439,7 +439,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": "minimal",
         "normalized": 1.0,
         "weight": 0.05,
@@ -456,13 +456,13 @@
       }
     },
     "confidence": 0.95,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   },
   {
     "id": "site-51107-b",
     "fips": "51107",
-    "name": "Sample site: West Leesburg parcel",
+    "name": "West Leesburg Parcel",
     "lat": 39.1157,
     "lng": -77.5936,
     "acres": 140,
@@ -483,7 +483,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 115,
         "normalized": 0.5,
         "weight": 0.2,
@@ -491,7 +491,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -523,7 +523,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 1.5,
         "normalized": 0.725,
         "weight": 0.1,
@@ -531,7 +531,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": "minimal",
         "normalized": 1.0,
         "weight": 0.05,
@@ -548,13 +548,13 @@
       }
     },
     "confidence": 0.95,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   },
   {
     "id": "site-47157-b",
     "fips": "47157",
-    "name": "Sample site: North Shelby parcel",
+    "name": "North Shelby Parcel",
     "lat": 35.25,
     "lng": -89.9,
     "acres": 120,
@@ -575,7 +575,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 161,
         "normalized": 0.7,
         "weight": 0.2,
@@ -583,7 +583,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -615,7 +615,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 1.0,
         "normalized": 0.85,
         "weight": 0.1,
@@ -623,7 +623,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": "minimal",
         "normalized": 1.0,
         "weight": 0.05,
@@ -640,13 +640,13 @@
       }
     },
     "confidence": 0.95,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   },
   {
     "id": "site-48441-b",
     "fips": "48441",
-    "name": "Sample site: West Taylor ranchland",
+    "name": "West Taylor Ranchland",
     "lat": 32.43,
     "lng": -99.9,
     "acres": 650,
@@ -667,7 +667,7 @@
         "known": true
       },
       "power_capacity": {
-        "label": "Substation voltage class",
+        "label": "Substation voltage",
         "value": 138,
         "normalized": 0.6,
         "weight": 0.2,
@@ -675,7 +675,7 @@
         "known": true
       },
       "grid_congestion": {
-        "label": "Interconnection queue congestion (county)",
+        "label": "Grid queue congestion",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -707,7 +707,7 @@
         "known": true
       },
       "water": {
-        "label": "Baseline water stress (Aqueduct, 0-5)",
+        "label": "Water stress",
         "value": 2.5,
         "normalized": 0.475,
         "weight": 0.1,
@@ -715,7 +715,7 @@
         "known": true
       },
       "hazard": {
-        "label": "Flood hazard",
+        "label": "Flood risk",
         "value": null,
         "normalized": 0.5,
         "weight": 0.05,
@@ -732,7 +732,7 @@
       }
     },
     "confidence": 0.9,
-    "notes": "Illustrative sample. Feature values are placeholders until the source modules run.",
+    "notes": "Illustrative sample parcel. Location and features are placeholders until the source pipelines run.",
     "is_sample": true
   }
 ]

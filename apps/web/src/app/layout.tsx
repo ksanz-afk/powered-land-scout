@@ -8,6 +8,7 @@ const geistSans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://powered-land-scout.vercel.app"),
   title: { default: "Powered Land Scout", template: "%s · Powered Land Scout" },
   description:
     "Find powered land for data centers, understand what nearby communities care about, and shape projects they can support.",
