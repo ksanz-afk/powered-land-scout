@@ -7,8 +7,10 @@
 /pipelines/sites/             @ksanz-afk
 /apps/web/src/app/sites/      @ksanz-afk
 /apps/web/src/app/proposals/  @ksanz-afk
+/apps/web/src/app/explore/*/energy/     @ksanz-afk
 
 # Dhruv
 /pipelines/community/         @dhruvtandon1
 /apps/web/src/app/counties/   @dhruvtandon1
 /apps/web/src/app/learn/      @dhruvtandon1
+/apps/web/src/app/explore/*/community/  @dhruvtandon1

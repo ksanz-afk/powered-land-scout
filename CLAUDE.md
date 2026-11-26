@@ -11,9 +11,9 @@ Rules only, loaded every session. Procedures live in `.claude/skills/`.
 
 | Path | Owner |
 |---|---|
-| `apps/web/src/app/sites`, `apps/web/src/app/proposals`, `pipelines/sites` | Kat |
-| `apps/web/src/app/counties`, `apps/web/src/app/learn`, `pipelines/community` | Dhruv |
-| `db/migrations`, `apps/web/src/lib/types.ts`, `apps/web/src/lib/data.ts`, shared components | Both |
+| `apps/web/src/app/sites`, `apps/web/src/app/proposals`, `apps/web/src/app/explore/[fips]/energy`, `pipelines/sites` | Kat |
+| `apps/web/src/app/counties`, `apps/web/src/app/learn`, `apps/web/src/app/explore/[fips]/community`, `pipelines/community` | Dhruv |
+| `db/migrations`, `apps/web/src/lib/` (types, data, scores), `apps/web/src/app/explore/[fips]` overview and layout, shared components | Both |
 
 Don't edit the other person's area without their OK in the PR.
 

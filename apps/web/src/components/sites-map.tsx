@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -11,17 +11,25 @@ const STYLE_URL = "https://tiles.openfreemap.org/styles/positron";
 
 export function SitesMap({ sites, height = 420 }: { sites: Site[]; height?: number }) {
   const container = useRef<HTMLDivElement>(null);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     if (!container.current || sites.length === 0) return;
 
-    const map = new maplibregl.Map({
-      container: container.current,
-      style: STYLE_URL,
-      center: [sites[0].lng, sites[0].lat],
-      zoom: 4,
-      attributionControl: { compact: true },
-    });
+    let map: maplibregl.Map;
+    try {
+      map = new maplibregl.Map({
+        container: container.current,
+        style: STYLE_URL,
+        center: [sites[0].lng, sites[0].lat],
+        zoom: 4,
+        attributionControl: { compact: true },
+      });
+    } catch {
+      // No WebGL (old browsers, some headless environments): show the fallback instead of crashing the page.
+      queueMicrotask(() => setFailed(true));
+      return;
+    }
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
 
     const bounds = new maplibregl.LngLatBounds();
@@ -41,7 +49,18 @@ export function SitesMap({ sites, height = 420 }: { sites: Site[]; height?: numb
     return () => map.remove();
   }, [sites]);
 
-  return <div ref={container} className="w-full overflow-hidden rounded-lg border" style={{ height }} />;
+  if (failed) {
+    return (
+      <div
+        className="flex w-full items-center justify-center rounded-[28px] bg-black/[0.03] text-sm text-muted-foreground ring-1 ring-black/5"
+        style={{ height }}
+      >
+        The map needs WebGL, which this browser doesn&rsquo;t support. Parcels are listed below.
+      </div>
+    );
+  }
+
+  return <div ref={container} className="w-full overflow-hidden rounded-[28px] ring-1 ring-black/5" style={{ height }} />;
 }
 
 function escapeHtml(value: string): string {

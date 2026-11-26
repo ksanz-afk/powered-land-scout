@@ -1,71 +1,23 @@
-import Link from "next/link";
+import { CountySearch } from "@/components/county-search";
+import { getCounties } from "@/lib/data";
 
-import { PageHeader } from "@/components/page-header";
-import { SentimentBar } from "@/components/sentiment-bar";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { getAllSentiment, getCounties, getProposals, getSites } from "@/lib/data";
-
-export default async function OverviewPage() {
-  const [counties, sites, proposals, sentiment] = await Promise.all([
-    getCounties(),
-    getSites(),
-    getProposals(),
-    getAllSentiment(),
-  ]);
-  const totalMw = sites.reduce((sum, s) => sum + s.est_available_mw, 0);
-
-  const stats = [
-    { label: "Communities", value: counties.length, href: "/counties" },
-    { label: "Candidate sites", value: sites.length, href: "/sites" },
-    { label: "MW proxy (by voltage class)", value: totalMw.toLocaleString(), href: "/sites" },
-    { label: "Draft proposals", value: proposals.length, href: "/proposals" },
-  ];
+export default async function HomePage() {
+  const counties = await getCounties();
+  const options = counties.map(({ fips, name, state }) => ({ fips, name, state }));
 
   return (
-    <div className="space-y-8">
-      <PageHeader
-        title="Overview"
-        description="Powered land that suits a data center, what nearby communities care about, and projects that answer both."
-      />
-
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {stats.map((stat) => (
-          <Link key={stat.label} href={stat.href}>
-            <Card className="transition-colors hover:bg-muted/50">
-              <CardHeader>
-                <CardDescription>{stat.label}</CardDescription>
-                <CardTitle className="text-3xl tabular-nums">{stat.value}</CardTitle>
-              </CardHeader>
-            </Card>
-          </Link>
-        ))}
+    <div className="flex min-h-[70vh] flex-col items-center justify-center pb-16 text-center">
+      <p className="text-sm font-medium text-muted-foreground">Powered land for data centers</p>
+      <h1 className="mt-4 max-w-3xl text-5xl font-semibold leading-[1.05] sm:text-6xl">
+        Where would you like to explore?
+      </h1>
+      <p className="mt-5 max-w-xl text-lg text-muted-foreground">
+        See the power, land and parcels a county offers, how its residents feel, and the projects that could
+        earn their support.
+      </p>
+      <div className="mt-12 w-full max-w-2xl">
+        <CountySearch counties={options} />
       </div>
-
-      <section className="space-y-4">
-        <h2 className="text-lg font-semibold">Communities</h2>
-        <div className="grid gap-4 md:grid-cols-2">
-          {counties.map((county) => {
-            const s = sentiment.find((x) => x.fips === county.fips);
-            return (
-              <Link key={county.fips} href={`/counties/${county.fips}`}>
-                <Card className="h-full transition-colors hover:bg-muted/50">
-                  <CardHeader>
-                    <CardTitle>
-                      {county.name}, {county.state}
-                    </CardTitle>
-                    <CardDescription>{county.summary}</CardDescription>
-                  </CardHeader>
-                  {s ? (
-                    <CardContent>
-                      <SentimentBar support={s.support_share} oppose={s.oppose_share} />
-                    </CardContent>
-                  ) : null}
-                </Card>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
     </div>
   );
 }
