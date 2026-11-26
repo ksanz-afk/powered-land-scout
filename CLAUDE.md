@@ -61,6 +61,18 @@ This should feel like real software, not a demo page.
 
 ## Shipping
 
+**Vercel rules (Hobby plan):** Vercel deploys a commit only if its author is
+linked to Kat's account, and it checks the latest commit.
+- Your git email must be one GitHub links to your account. Use your GitHub
+  noreply address (`<id>+<username>@users.noreply.github.com`), set per repo:
+  `git config --local user.email ...`. A hostname email like
+  `you@Your-MacBook.local` gets the deploy blocked.
+- PRs merge with **"Create a merge commit"** only (squash and rebase are
+  disabled in the repo settings). The merge commit is authored by whoever
+  merges, so Kat merging keeps production deploys working.
+- Previews of Dhruv's PRs may show "Blocked" on Hobby; that's the plan
+  limit, not a code problem. Check changes locally with `npm run dev`.
+
 - One branch per task; merge through PRs. Run `ship-pr` before opening one.
 - CI must pass (lint, typecheck, build, pipeline checks). Vercel posts a
   preview URL on every PR; use it to review each other's work.

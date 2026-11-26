@@ -13,3 +13,4 @@ description: Check and open a pull request. Use when a task is ready for review.
    - **How to check it** (pages to visit on the Vercel preview)
    - **Follow-ups** for the other owner, if any
 6. Request review from the other owner if the PR touches shared or their files; otherwise merging your own PR after CI passes is fine.
+7. Merge with "Create a merge commit" (the only option enabled). On Hobby, Vercel deploys only commits it can tie to Kat's account, so Kat merges PRs whose latest commit is Dhruv's. If a preview shows "Blocked", see the Vercel rules in `CLAUDE.md`.
