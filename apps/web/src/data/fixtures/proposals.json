@@ -1,4 +1,70 @@
 [
-  {"id":"prop-48441-a","site_id":"site-48441-a","issue_ids":["iss-48441-1","iss-48441-2"],"title":"Sample: Water-positive campus with county road fund","pitch":"Illustrative sample. A closed-loop cooling design paired with a county road-repair fund, sized to the project's tax contribution.","commitments":["Closed-loop cooling (illustrative)","Annual road-repair fund (illustrative)"],"status":"draft","is_sample":true},
-  {"id":"prop-53025-b","site_id":"site-53025-b","issue_ids":["iss-53025-1","iss-53025-2"],"title":"Sample: Aquifer monitoring and school partnership","pitch":"Illustrative sample. Public aquifer monitoring plus a technical-education partnership with local schools.","commitments":["Public water-use dashboard (illustrative)","School technical program (illustrative)"],"status":"draft","is_sample":true}
+  {
+    "id": "prop-48441-a",
+    "site_id": "site-48441-a",
+    "issue_ids": [
+      "iss-48441-1",
+      "iss-48441-2"
+    ],
+    "title": "Water-positive campus with a county road fund",
+    "pitch": "Closed-loop cooling keeps the campus off the county's water supply, and a share of the project's tax contribution goes to a dedicated fund for rural road repair.",
+    "commitments": [
+      "Closed-loop cooling with near-zero water draw",
+      "Annual county road-repair fund, sized to the project's tax contribution",
+      "Public quarterly report on water and road spending"
+    ],
+    "status": "draft",
+    "is_sample": true
+  },
+  {
+    "id": "prop-53025-b",
+    "site_id": "site-53025-b",
+    "issue_ids": [
+      "iss-53025-1",
+      "iss-53025-2"
+    ],
+    "title": "Aquifer monitoring and a school technical program",
+    "pitch": "An independent, public aquifer-monitoring network answers the community's top concern directly, paired with a technical-education partnership with local schools.",
+    "commitments": [
+      "Funded public aquifer-monitoring network with an open data dashboard",
+      "Technical-education partnership with local high schools",
+      "Hiring pipeline for program graduates"
+    ],
+    "status": "draft",
+    "is_sample": true
+  },
+  {
+    "id": "prop-47157-a",
+    "site_id": "site-47157-a",
+    "issue_ids": [
+      "iss-47157-1",
+      "iss-47157-2"
+    ],
+    "title": "Grid-powered campus with local job training",
+    "pitch": "No on-site gas turbines: the campus draws grid power with battery backup, avoiding the emissions and noise behind past local backlash, and funds a job-training program.",
+    "commitments": [
+      "No on-site combustion generation; battery backup only",
+      "Independent air-quality monitoring near the site",
+      "Skilled-trades training program with local colleges"
+    ],
+    "status": "draft",
+    "is_sample": true
+  },
+  {
+    "id": "prop-51107-a",
+    "site_id": "site-51107-a",
+    "issue_ids": [
+      "iss-51107-1",
+      "iss-51107-2"
+    ],
+    "title": "Corridor campus with traffic and school investments",
+    "pitch": "Construction and shift traffic is routed off residential roads, with funding for intersection upgrades and new school capacity tied to the project's tax revenue.",
+    "commitments": [
+      "Traffic management plan with intersection upgrades",
+      "School-capacity contribution tied to tax revenue",
+      "Sound walls and low-noise cooling on residential edges"
+    ],
+    "status": "draft",
+    "is_sample": true
+  }
 ]

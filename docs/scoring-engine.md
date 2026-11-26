@@ -39,8 +39,8 @@ candidate parcels ──> features (power, land, fiber, water, hazard, zoning)
 | Land size | 15% | `acres` | Larger (250+ acres best) | State parcel data (TxGIO etc.) |
 | Land suitability | 5% | `land_cover` | Developed / barren / grassland | USGS NLCD |
 | Fiber | 10% | `fiber_km` | Closer to fiber | FCC National Broadband Map (proxy) |
-| Water | 10% | `water_stress` | Lower baseline water stress | WRI Aqueduct 4.0 |
-| Flood hazard | 5% | `flood_zone` | Minimal flood risk | FEMA NFHL |
+| Water stress | 10% | `water_stress` | Lower baseline water stress | WRI Aqueduct 4.0 |
+| Flood risk | 5% | `flood_zone` | Minimal flood risk | FEMA NFHL |
 | Zoning | 5% | `zoning_status` | Industrial, then unzoned | County zoning / parcel land-use codes |
 
 `est_available_mw` is a rough proxy from the substation's voltage class, not

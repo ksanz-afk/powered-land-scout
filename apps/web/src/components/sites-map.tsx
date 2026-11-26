@@ -9,6 +9,9 @@ import type { Site } from "@/lib/types";
 // Free vector tiles, no API key. Swap the style URL for Mapbox later if needed.
 const STYLE_URL = "https://tiles.openfreemap.org/styles/positron";
 
+// Served from public/ (copied by scripts/copy-maplibre-worker.mjs); the bundler doesn't emit it.
+maplibregl.setWorkerUrl("/vendor/maplibre-gl-worker.mjs");
+
 export function SitesMap({ sites, height = 420 }: { sites: Site[]; height?: number }) {
   const container = useRef<HTMLDivElement>(null);
   const [failed, setFailed] = useState(false);

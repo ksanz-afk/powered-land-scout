@@ -7,14 +7,14 @@ export function SiteHeader() {
         <Link href="/" className="text-[15px] font-semibold tracking-tight">
           Powered Land Scout
         </Link>
-        <nav className="flex items-center gap-6 text-[13px] text-muted-foreground">
+        <nav className="flex items-center gap-4 text-[13px] text-muted-foreground sm:gap-6">
           <Link href="/" className="transition-colors hover:text-foreground">
             Explore
           </Link>
           <Link href="/learn" className="transition-colors hover:text-foreground">
             Learn
           </Link>
-          <span className="rounded-full bg-black/[0.04] px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground">
+          <span className="hidden rounded-full bg-black/[0.04] px-2.5 py-0.5 text-[11px] font-medium text-muted-foreground sm:inline-flex">
             Demo data
           </span>
         </nav>

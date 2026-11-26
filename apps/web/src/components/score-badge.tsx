@@ -1,15 +1,16 @@
-import { Badge } from "@/components/ui/badge";
+import { SamplePill } from "@/components/sample-pill";
 
+/** Compact score pill: the number in text ink, tier shown by a small dot. */
 export function ScoreBadge({ score }: { score: number }) {
-  const variant = score >= 75 ? "default" : score >= 60 ? "secondary" : "outline";
-  return <Badge variant={variant}>{score}</Badge>;
+  const tier = score >= 75 ? "var(--viz-energy)" : score >= 60 ? "#8fb6e8" : "#c8c7c2";
+  return (
+    <span className="inline-flex items-center gap-1.5 rounded-full bg-black/[0.04] px-2.5 py-0.5 text-sm font-semibold tabular-nums">
+      <span className="size-1.5 rounded-full" style={{ background: tier }} aria-hidden />
+      {score}
+    </span>
+  );
 }
 
 export function SampleBadge({ show }: { show: boolean }) {
-  if (!show) return null;
-  return (
-    <Badge variant="outline" className="border-amber-300 text-amber-700 dark:text-amber-300">
-      Sample
-    </Badge>
-  );
+  return <SamplePill show={show} />;
 }

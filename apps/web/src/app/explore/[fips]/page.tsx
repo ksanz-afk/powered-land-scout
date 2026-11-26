@@ -77,7 +77,7 @@ export default async function CountyOverviewPage(props: PageProps<"/explore/[fip
       </div>
 
       <section className="space-y-5">
-        <div className="flex items-end justify-between">
+        <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
           <div>
             <h2 className="text-2xl font-semibold">Available parcels</h2>
             <p className="mt-1 text-sm text-muted-foreground">
