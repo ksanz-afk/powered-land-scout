@@ -20,8 +20,13 @@ export function ProjectCard({
       className="group flex h-full flex-col rounded-[28px] bg-white p-7 shadow-[0_2px_20px_rgba(0,0,0,0.05)] ring-1 ring-black/5 transition hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
     >
       <div className="flex items-center justify-between gap-3">
-        <p className="text-sm text-muted-foreground">{siteName ?? "Project"}</p>
-        <SamplePill show={proposal.is_sample} />
+        <p className="truncate text-sm text-muted-foreground">{siteName ?? "Project"}</p>
+        <div className="flex shrink-0 items-center gap-2">
+          <span className="rounded-full bg-[var(--viz-community-track)] px-2.5 py-0.5 text-xs font-semibold">
+            Fit {proposal.community_fit}
+          </span>
+          <SamplePill show={proposal.is_sample} />
+        </div>
       </div>
       <h3 className="mt-3 text-xl font-semibold leading-snug">{clean(proposal.title)}</h3>
       <p className="mt-3 flex-1 text-[15px] leading-relaxed text-foreground/75">{proposal.pitch}</p>

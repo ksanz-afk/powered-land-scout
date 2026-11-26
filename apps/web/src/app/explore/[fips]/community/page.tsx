@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { BarList } from "@/components/bar-list";
+import { ProjectCard } from "@/components/project-card";
 import { SampleBadge } from "@/components/score-badge";
 import { ScoreTile } from "@/components/score-tile";
 import { Panel } from "@/components/section";
@@ -121,29 +122,16 @@ export default async function CommunityPage(props: PageProps<"/explore/[fips]/co
           </Panel>
         ) : (
           <div className="grid gap-6 md:grid-cols-2">
-            {proposals.map((p) => {
-              const site = sites.find((s) => s.id === p.site_id);
-              const addressed = issueLookup.filter((i) => p.issue_ids.includes(i.id));
-              return (
-                <Link
+            {[...proposals]
+              .sort((a, b) => b.community_fit - a.community_fit)
+              .map((p) => (
+                <ProjectCard
                   key={p.id}
-                  href={`/proposals/${p.id}`}
-                  className="flex flex-col rounded-[28px] bg-white p-7 shadow-[0_2px_20px_rgba(0,0,0,0.05)] ring-1 ring-black/5 transition hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)]"
-                >
-                  <p className="text-sm text-muted-foreground">{site ? clean(site.name) : "Site"}</p>
-                  <h3 className="mt-2 text-xl font-semibold">{clean(p.title)}</h3>
-                  <p className="mt-3 text-[15px] leading-relaxed text-foreground/80">{p.pitch}</p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {addressed.map((i) => (
-                      <span key={i.id} className="rounded-full bg-[var(--viz-community-track)] px-3 py-1 text-sm">
-                        {clean(i.issue)}
-                      </span>
-                    ))}
-                    <SampleBadge show={p.is_sample} />
-                  </div>
-                </Link>
-              );
-            })}
+                  proposal={p}
+                  siteName={sites.find((s) => s.id === p.site_id)?.name}
+                  issues={issueLookup.filter((i) => p.issue_ids.includes(i.id))}
+                />
+              ))}
           </div>
         )}
       </section>

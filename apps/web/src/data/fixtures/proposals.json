@@ -1,35 +1,53 @@
 [
   {
-    "id": "prop-48441-a",
-    "site_id": "site-48441-a",
+    "id": "prop-51107-a",
+    "site_id": "site-51107-a",
     "issue_ids": [
-      "iss-48441-1",
-      "iss-48441-2"
+      "iss-51107-1",
+      "iss-51107-2"
     ],
-    "title": "Water-positive campus with a county road fund",
-    "pitch": "Closed-loop cooling keeps the campus off the county's water supply, and a share of the project's tax contribution goes to a dedicated fund for rural road repair.",
+    "title": "Road-first campus with a school technical program",
+    "pitch": "A dedicated road fund turns part of the project's tax contribution into the repairs residents keep asking for. A technical program with local schools links the campus to what families care about.",
     "commitments": [
-      "Closed-loop cooling with near-zero water draw",
       "Annual county road-repair fund, sized to the project's tax contribution",
-      "Public quarterly report on water and road spending"
+      "Construction traffic plan that keeps trucks off residential roads",
+      "Technical-education partnership with local high schools",
+      "Paid internships for students in the program",
+      "Sound walls and low-noise cooling on residential edges"
     ],
+    "rationale": [
+      "Ashburn Corridor Parcel scores 85 (strong): 230 kV substation 1.2 km away, 85 acres.",
+      "Residents rank traffic and road capacity as a top local issue (salience 80%). Commitment: annual county road-repair fund, sized to the project's tax contribution.",
+      "Residents rank school capacity as a top local issue (salience 60%). Commitment: technical-education partnership with local high schools.",
+      "\u201cNoise\u201d is one of the most-raised concerns about data centers here. Commitment: sound walls and low-noise cooling on residential edges."
+    ],
+    "community_fit": 74,
     "status": "draft",
     "is_sample": true
   },
   {
-    "id": "prop-53025-b",
-    "site_id": "site-53025-b",
+    "id": "prop-51107-b",
+    "site_id": "site-51107-b",
     "issue_ids": [
-      "iss-53025-1",
-      "iss-53025-2"
+      "iss-51107-2",
+      "iss-51107-3"
     ],
-    "title": "Aquifer monitoring and a school technical program",
-    "pitch": "An independent, public aquifer-monitoring network answers the community's top concern directly, paired with a technical-education partnership with local schools.",
+    "title": "School-partner campus with no cost shift to ratepayers",
+    "pitch": "A technical program with local schools links the campus to what families care about. Paying its full grid costs and flexing during peaks keeps the project off residents' electricity bills.",
     "commitments": [
-      "Funded public aquifer-monitoring network with an open data dashboard",
       "Technical-education partnership with local high schools",
-      "Hiring pipeline for program graduates"
+      "Paid internships for students in the program",
+      "Pay the full cost of grid upgrades the project requires",
+      "Accept a large-load tariff so residential rates don't absorb the project",
+      "Sound walls and low-noise cooling on residential edges"
     ],
+    "rationale": [
+      "West Leesburg Parcel scores 67 (promising): 115 kV substation 4.8 km away, 140 acres.",
+      "Residents rank school capacity as a top local issue (salience 60%). Commitment: technical-education partnership with local high schools.",
+      "Residents rank electricity rates as a top local issue (salience 50%). Commitment: pay the full cost of grid upgrades the project requires.",
+      "\u201cNoise\u201d is one of the most-raised concerns about data centers here. Commitment: sound walls and low-noise cooling on residential edges."
+    ],
+    "community_fit": 58,
     "status": "draft",
     "is_sample": true
   },
@@ -40,30 +58,148 @@
       "iss-47157-1",
       "iss-47157-2"
     ],
-    "title": "Grid-powered campus with local job training",
-    "pitch": "No on-site gas turbines: the campus draws grid power with battery backup, avoiding the emissions and noise behind past local backlash, and funds a job-training program.",
+    "title": "Zero-combustion campus with local job training",
+    "pitch": "No on-site turbines means none of the emissions behind past local backlash, verified by independent monitoring. An apprenticeship program and public local-hiring targets put the jobs where residents can see them.",
     "commitments": [
-      "No on-site combustion generation; battery backup only",
-      "Independent air-quality monitoring near the site",
-      "Skilled-trades training program with local colleges"
+      "No on-site combustion generation; grid power with battery backup",
+      "Independent air-quality monitoring near the site, published online",
+      "Skilled-trades apprenticeship program with local colleges",
+      "Local-hiring target for construction and operations, reported publicly",
+      "Sound walls and low-noise cooling on residential edges"
     ],
+    "rationale": [
+      "South Memphis Industrial Tract scores 84 (strong): 161 kV substation 2.0 km away, 210 acres.",
+      "Residents rank air quality as a top local issue (salience 90%). Commitment: no on-site combustion generation; grid power with battery backup.",
+      "Residents rank local job training as a top local issue (salience 70%). Commitment: skilled-trades apprenticeship program with local colleges.",
+      "\u201cNoise\u201d is one of the most-raised concerns about data centers here. Commitment: sound walls and low-noise cooling on residential edges."
+    ],
+    "community_fit": 76,
     "status": "draft",
     "is_sample": true
   },
   {
-    "id": "prop-51107-a",
-    "site_id": "site-51107-a",
+    "id": "prop-47157-b",
+    "site_id": "site-47157-b",
     "issue_ids": [
-      "iss-51107-1",
-      "iss-51107-2"
+      "iss-47157-2",
+      "iss-47157-3"
     ],
-    "title": "Corridor campus with traffic and school investments",
-    "pitch": "Construction and shift traffic is routed off residential roads, with funding for intersection upgrades and new school capacity tied to the project's tax revenue.",
+    "title": "Local-jobs campus with a county road fund",
+    "pitch": "An apprenticeship program and public local-hiring targets put the jobs where residents can see them. A dedicated road fund turns part of the project's tax contribution into the repairs residents keep asking for.",
     "commitments": [
-      "Traffic management plan with intersection upgrades",
-      "School-capacity contribution tied to tax revenue",
+      "Skilled-trades apprenticeship program with local colleges",
+      "Local-hiring target for construction and operations, reported publicly",
+      "Annual county road-repair fund, sized to the project's tax contribution",
+      "Construction traffic plan that keeps trucks off residential roads",
+      "No on-site combustion generation; grid power with battery backup"
+    ],
+    "rationale": [
+      "North Shelby Parcel scores 67 (promising): 161 kV substation 6.5 km away, 120 acres.",
+      "Residents rank local job training as a top local issue (salience 70%). Commitment: skilled-trades apprenticeship program with local colleges.",
+      "Residents rank road repair backlog as a top local issue (salience 50%). Commitment: annual county road-repair fund, sized to the project's tax contribution.",
+      "\u201cAir quality\u201d is one of the most-raised concerns about data centers here. Commitment: no on-site combustion generation; grid power with battery backup."
+    ],
+    "community_fit": 57,
+    "status": "draft",
+    "is_sample": true
+  },
+  {
+    "id": "prop-53025-b",
+    "site_id": "site-53025-b",
+    "issue_ids": [
+      "iss-53025-1",
+      "iss-53025-2"
+    ],
+    "title": "Water-positive campus with a school technical program",
+    "pitch": "Cooling that draws close to no water keeps the campus off Grant County's supply, which residents rank as a top concern. A technical program with local schools links the campus to what families care about.",
+    "commitments": [
+      "Closed-loop or air-cooled design with near-zero water draw for cooling",
+      "Public, real-time water-use dashboard",
+      "Technical-education partnership with local high schools",
+      "Paid internships for students in the program",
       "Sound walls and low-noise cooling on residential edges"
     ],
+    "rationale": [
+      "Moses Lake Parcel scores 77 (strong): 230 kV substation 3.1 km away, 180 acres.",
+      "Residents rank groundwater and aquifer levels as a top local issue (salience 90%). Commitment: closed-loop or air-cooled design with near-zero water draw for cooling.",
+      "Residents rank school funding as a top local issue (salience 60%). Commitment: technical-education partnership with local high schools.",
+      "\u201cNoise\u201d is one of the most-raised concerns about data centers here. Commitment: sound walls and low-noise cooling on residential edges."
+    ],
+    "community_fit": 75,
+    "status": "draft",
+    "is_sample": true
+  },
+  {
+    "id": "prop-53025-a",
+    "site_id": "site-53025-a",
+    "issue_ids": [
+      "iss-53025-2",
+      "iss-53025-3"
+    ],
+    "title": "School-partner campus with a workforce housing fund",
+    "pitch": "A technical program with local schools links the campus to what families care about. A workforce-housing fund keeps construction and new jobs from pushing up local rents.",
+    "commitments": [
+      "Technical-education partnership with local high schools",
+      "Paid internships for students in the program",
+      "Contribution to a local workforce-housing fund",
+      "Housing support for construction crews so they don't strain rentals",
+      "Closed-loop or air-cooled design with near-zero water draw for cooling"
+    ],
+    "rationale": [
+      "Quincy Industrial Park scores 75 (strong): 115 kV substation 0.8 km away, 95 acres.",
+      "Residents rank school funding as a top local issue (salience 60%). Commitment: technical-education partnership with local high schools.",
+      "Residents rank affordable housing as a top local issue (salience 50%). Commitment: contribution to a local workforce-housing fund.",
+      "\u201cWater use\u201d is one of the most-raised concerns about data centers here. Commitment: closed-loop or air-cooled design with near-zero water draw for cooling."
+    ],
+    "community_fit": 55,
+    "status": "draft",
+    "is_sample": true
+  },
+  {
+    "id": "prop-48441-a",
+    "site_id": "site-48441-a",
+    "issue_ids": [
+      "iss-48441-1",
+      "iss-48441-2"
+    ],
+    "title": "Water-positive campus with a county road fund",
+    "pitch": "Cooling that draws close to no water keeps the campus off Taylor County's supply, which residents rank as a top concern. A dedicated road fund turns part of the project's tax contribution into the repairs residents keep asking for.",
+    "commitments": [
+      "Closed-loop or air-cooled design with near-zero water draw for cooling",
+      "Public, real-time water-use dashboard",
+      "Annual county road-repair fund, sized to the project's tax contribution",
+      "Construction traffic plan that keeps trucks off residential roads"
+    ],
+    "rationale": [
+      "South Abilene Tract scores 83 (strong): 345 kV substation 2.5 km away, 400 acres.",
+      "Residents rank water supply reliability as a top local issue (salience 80%). Commitment: closed-loop or air-cooled design with near-zero water draw for cooling.",
+      "Residents rank rural road condition as a top local issue (salience 70%). Commitment: annual county road-repair fund, sized to the project's tax contribution."
+    ],
+    "community_fit": 71,
+    "status": "draft",
+    "is_sample": true
+  },
+  {
+    "id": "prop-48441-b",
+    "site_id": "site-48441-b",
+    "issue_ids": [
+      "iss-48441-2",
+      "iss-48441-3"
+    ],
+    "title": "Road-first campus with local job training",
+    "pitch": "A dedicated road fund turns part of the project's tax contribution into the repairs residents keep asking for. An apprenticeship program and public local-hiring targets put the jobs where residents can see them.",
+    "commitments": [
+      "Annual county road-repair fund, sized to the project's tax contribution",
+      "Construction traffic plan that keeps trucks off residential roads",
+      "Skilled-trades apprenticeship program with local colleges",
+      "Local-hiring target for construction and operations, reported publicly"
+    ],
+    "rationale": [
+      "West Taylor Ranchland scores 55 (mixed): 138 kV substation 9.0 km away, 650 acres.",
+      "Residents rank rural road condition as a top local issue (salience 70%). Commitment: annual county road-repair fund, sized to the project's tax contribution.",
+      "Residents rank skilled jobs for young residents as a top local issue (salience 60%). Commitment: skilled-trades apprenticeship program with local colleges."
+    ],
+    "community_fit": 62,
     "status": "draft",
     "is_sample": true
   }

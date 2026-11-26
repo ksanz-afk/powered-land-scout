@@ -1,0 +1,77 @@
+{
+  "version": "v0",
+  "notes": "Commitment library by issue category. Phrases are written to be specific and checkable. Edit deliberately; say why in the commit.",
+  "categories": {
+    "water": {
+      "headline": "Water-positive campus",
+      "with_phrase": "a public water dashboard",
+      "commitments": ["Closed-loop or air-cooled design with near-zero water draw for cooling", "Public, real-time water-use dashboard", "Fund local water-supply resilience projects"],
+      "pitch": "Cooling that draws close to no water keeps the campus off {county}'s supply, which residents rank as a top concern."
+    },
+    "infrastructure": {
+      "headline": "Road-first campus",
+      "with_phrase": "a county road fund",
+      "commitments": ["Annual county road-repair fund, sized to the project's tax contribution", "Construction traffic plan that keeps trucks off residential roads", "Intersection upgrades at the site entrance before construction starts"],
+      "pitch": "A dedicated road fund turns part of the project's tax contribution into the repairs residents keep asking for."
+    },
+    "education": {
+      "headline": "School-partner campus",
+      "with_phrase": "a school technical program",
+      "commitments": ["Technical-education partnership with local high schools", "Paid internships for students in the program", "Contribution to school capacity tied to the project's tax revenue"],
+      "pitch": "A technical program with local schools links the campus to what families care about."
+    },
+    "jobs": {
+      "headline": "Local-jobs campus",
+      "with_phrase": "local job training",
+      "commitments": ["Skilled-trades apprenticeship program with local colleges", "Local-hiring target for construction and operations, reported publicly", "Hiring pipeline for program graduates"],
+      "pitch": "An apprenticeship program and public local-hiring targets put the jobs where residents can see them."
+    },
+    "energy_costs": {
+      "headline": "Pay-our-own-way campus",
+      "with_phrase": "no cost shift to ratepayers",
+      "commitments": ["Pay the full cost of grid upgrades the project requires", "Accept a large-load tariff so residential rates don't absorb the project", "Reduce load during grid peaks when the utility asks"],
+      "pitch": "Paying its full grid costs and flexing during peaks keeps the project off residents' electricity bills."
+    },
+    "health": {
+      "headline": "Zero-combustion campus",
+      "with_phrase": "independent air monitoring",
+      "commitments": ["No on-site combustion generation; grid power with battery backup", "Independent air-quality monitoring near the site, published online", "Community health liaison with quarterly public updates"],
+      "pitch": "No on-site turbines means none of the emissions behind past local backlash, verified by independent monitoring."
+    },
+    "environment": {
+      "headline": "Clean-power campus",
+      "with_phrase": "habitat restoration",
+      "commitments": ["Match consumption with new clean-energy procurement in the region", "Restore habitat on unused parts of the parcel", "Annual environmental report, independently reviewed"],
+      "pitch": "New clean-power procurement and on-site restoration answer residents' environmental concerns directly."
+    },
+    "housing": {
+      "headline": "Housing-partner campus",
+      "with_phrase": "a workforce housing fund",
+      "commitments": ["Contribution to a local workforce-housing fund", "Housing support for construction crews so they don't strain rentals", "Partnership with the county on housing near the site"],
+      "pitch": "A workforce-housing fund keeps construction and new jobs from pushing up local rents."
+    },
+    "public_safety": {
+      "headline": "Safety-partner campus",
+      "with_phrase": "fire and EMS support",
+      "commitments": ["Fund equipment and training for local fire and EMS", "Joint emergency plan with county responders", "On-site safety drills with local departments"],
+      "pitch": "Funding for fire and EMS makes the project a visible contributor to local safety."
+    },
+    "other": {
+      "headline": "Community-partner campus",
+      "with_phrase": "a community benefits agreement",
+      "commitments": ["Written community benefits agreement with annual public reporting"],
+      "pitch": "A written benefits agreement commits the project to what residents raised."
+    }
+  },
+  "concerns": {
+    "noise": ["Sound walls and low-noise cooling on residential edges", "Published noise limits with independent monitoring"],
+    "water use": ["Closed-loop or air-cooled design with near-zero water draw for cooling"],
+    "air quality": ["No on-site combustion generation; grid power with battery backup"],
+    "energy costs": ["Pay the full cost of grid upgrades the project requires"],
+    "transmission lines": ["Route new lines along existing corridors where possible, with public input on routing"],
+    "land use": ["Landscaped buffers and building heights reviewed with neighbors"]
+  },
+  "site_rules": {
+    "high_water_risk_commitment": "Closed-loop or air-cooled design with near-zero water draw for cooling"
+  }
+}
