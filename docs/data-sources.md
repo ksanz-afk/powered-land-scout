@@ -27,3 +27,14 @@ only, no personal data.
 | Source | Gives | Coverage | Access / license | Status | Notes |
 |---|---|---|---|---|---|
 | | | | | | |
+
+## Education hub (Dhruv)
+
+Manually curated from the four supplied documents. No scraping, API keys or live data collection. Original source text was reviewed on 2026-11-19; numerical summaries were checked on 2026-11-23. This records evidence review, not a new license or terms-of-service assessment. Only small document thumbnails and curated records are included; full PDFs stay local.
+
+| Source | Coverage | Access | Status | Use and limits |
+|---|---|---|---|---|
+| [Virginia JLARC: Data Centers in Virginia](https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp) (December 9, 2024) | Virginia | Supplied PDF; original publisher link | In use, curated Learn example | 2024 modeled scenarios, not a current household forecast. Numerical summaries checked against Table 4-2, printed p. 48 (PDF p. 66), on 2026-11-23. |
+| [Nature Energy: Data centres asymmetrically exacerbate energy burdens through wholesale price increases and regressive grid cost shifting](https://doi.org/10.1038/s41560-026-02163-x) (November 9, 2026) | US research | Supplied PDF; original publisher link | In use, curated Learn example | Main paper only; supplementary methods not supplied. Supporting source link in the Other tab. Publication date checked on the supplied PDF. |
+| [Virginia SCC: In Biennial Review Ruling, SCC Creates New Class for Large-Scale Energy Users](https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html) (November 25, 2025) | Dominion Energy Virginia | Supplied PDF; original publisher link | In use, curated Learn example | Official decision announcement only; full order and tariff not assessed. Saved PDF p. 1. Supporting source link in the Other tab. |
+| [Microsoft: Building Community-First AI Infrastructure](https://blogs.microsoft.com/on-the-issues/2026/01/13/community-first-ai-infrastructure/) (January 13, 2026) | US company policy | Supplied PDF; original publisher link | In use, curated Learn example | Company-reported commitments and MISO generation contracts, not verified operating supply or a site agreement. PDF pp. 1–2; numerical summary checked 2026-11-23. |
