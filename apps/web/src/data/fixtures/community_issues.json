@@ -8,7 +8,8 @@
   {"id":"iss-53025-1","fips":"53025","issue":"Sample: Groundwater and aquifer levels","category":"water","salience":0.9,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
   {"id":"iss-53025-2","fips":"53025","issue":"Sample: School funding","category":"education","salience":0.6,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
   {"id":"iss-53025-3","fips":"53025","issue":"Sample: Affordable housing","category":"housing","salience":0.5,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
-  {"id":"iss-48441-1","fips":"48441","issue":"Sample: Water supply reliability","category":"water","salience":0.8,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
-  {"id":"iss-48441-2","fips":"48441","issue":"Sample: Rural road condition","category":"infrastructure","salience":0.7,"summary":"Illustrative sample.","signal_count":0,"is_sample":true},
-  {"id":"iss-48441-3","fips":"48441","issue":"Sample: Skilled jobs for young residents","category":"jobs","salience":0.6,"summary":"Illustrative sample.","signal_count":0,"is_sample":true}
+  {"id":"iss-48441-1","issue":"Water supply reliability","category":"water","summary":"Discussion of cooling and local water use.","fips":"48441","salience":0.6,"signal_count":6,"is_sample":false},
+  {"id":"iss-48441-3","issue":"Local jobs and training","category":"jobs","summary":"Expected job benefits and who can access them.","fips":"48441","salience":0.6,"signal_count":6,"is_sample":false},
+  {"id":"iss-48441-4","issue":"Housing affordability","category":"housing","summary":"Concerns about rent and housing availability.","fips":"48441","salience":0.3,"signal_count":3,"is_sample":false},
+  {"id":"iss-48441-2","issue":"Rural road condition","category":"infrastructure","summary":"One selected comment mentions traffic and worn roads.","fips":"48441","salience":0.1,"signal_count":1,"is_sample":false}
 ]

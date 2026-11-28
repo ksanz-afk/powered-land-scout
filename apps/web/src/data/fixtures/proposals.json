@@ -160,22 +160,22 @@
     "site_id": "site-48441-a",
     "issue_ids": [
       "iss-48441-1",
-      "iss-48441-2"
+      "iss-48441-3"
     ],
-    "title": "Water-positive campus with a county road fund",
-    "pitch": "Cooling that draws close to no water keeps the campus off Taylor County's supply, which residents rank as a top concern. A dedicated road fund turns part of the project's tax contribution into the repairs residents keep asking for.",
+    "title": "Water-positive campus with local job training",
+    "pitch": "Cooling that draws close to no water keeps the campus off Taylor County's supply, which residents rank as a top concern. An apprenticeship program and public local-hiring targets put the jobs where residents can see them.",
     "commitments": [
       "Closed-loop or air-cooled design with near-zero water draw for cooling",
       "Public, real-time water-use dashboard",
-      "Annual county road-repair fund, sized to the project's tax contribution",
-      "Construction traffic plan that keeps trucks off residential roads"
+      "Skilled-trades apprenticeship program with local colleges",
+      "Local-hiring target for construction and operations, reported publicly"
     ],
     "rationale": [
       "South Abilene Tract scores 83 (strong): 345 kV substation 2.5 km away, 400 acres.",
-      "Residents rank water supply reliability as a top local issue (salience 80%). Commitment: closed-loop or air-cooled design with near-zero water draw for cooling.",
-      "Residents rank rural road condition as a top local issue (salience 70%). Commitment: annual county road-repair fund, sized to the project's tax contribution."
+      "Residents rank water supply reliability as a top local issue (salience 60%). Commitment: closed-loop or air-cooled design with near-zero water draw for cooling.",
+      "Residents rank local jobs and training as a top local issue (salience 60%). Commitment: skilled-trades apprenticeship program with local colleges."
     ],
-    "community_fit": 71,
+    "community_fit": 80,
     "status": "draft",
     "is_sample": true
   },
@@ -183,23 +183,23 @@
     "id": "prop-48441-b",
     "site_id": "site-48441-b",
     "issue_ids": [
-      "iss-48441-2",
-      "iss-48441-3"
+      "iss-48441-3",
+      "iss-48441-4"
     ],
-    "title": "Road-first campus with local job training",
-    "pitch": "A dedicated road fund turns part of the project's tax contribution into the repairs residents keep asking for. An apprenticeship program and public local-hiring targets put the jobs where residents can see them.",
+    "title": "Local-jobs campus with a workforce housing fund",
+    "pitch": "An apprenticeship program and public local-hiring targets put the jobs where residents can see them. A workforce-housing fund keeps construction and new jobs from pushing up local rents.",
     "commitments": [
-      "Annual county road-repair fund, sized to the project's tax contribution",
-      "Construction traffic plan that keeps trucks off residential roads",
       "Skilled-trades apprenticeship program with local colleges",
-      "Local-hiring target for construction and operations, reported publicly"
+      "Local-hiring target for construction and operations, reported publicly",
+      "Contribution to a local workforce-housing fund",
+      "Housing support for construction crews so they don't strain rentals"
     ],
     "rationale": [
       "West Taylor Ranchland scores 55 (mixed): 138 kV substation 9.0 km away, 650 acres.",
-      "Residents rank rural road condition as a top local issue (salience 70%). Commitment: annual county road-repair fund, sized to the project's tax contribution.",
-      "Residents rank skilled jobs for young residents as a top local issue (salience 60%). Commitment: skilled-trades apprenticeship program with local colleges."
+      "Residents rank local jobs and training as a top local issue (salience 60%). Commitment: skilled-trades apprenticeship program with local colleges.",
+      "Residents rank housing affordability as a top local issue (salience 30%). Commitment: contribution to a local workforce-housing fund."
     ],
-    "community_fit": 62,
+    "community_fit": 60,
     "status": "draft",
     "is_sample": true
   }

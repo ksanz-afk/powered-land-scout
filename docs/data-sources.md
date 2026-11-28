@@ -24,9 +24,12 @@ only, no personal data.
 
 ## Community scrubber (Dhruv)
 
-| Source | Gives | Coverage | Access / license | Status | Notes |
-|---|---|---|---|---|---|
-| | | | | | |
+| Source | Date and location | Use in Taylor Community |
+|---|---|---|
+| [Abilene discussion](https://www.reddit.com/r/Abilene/comments/1pf0ac8/datacenters/) | Individual comment links and dates in `pipelines/community/inputs/taylor-reviewed.json`. Reviewed Nov 25, 2026. | Ten selected accounts from one thread. Stance and topic counts describe this selection. County residence is unverified. |
+| [Texas House written testimony](https://capitol.texas.gov/tlodocs/89R/handouts/C4502026040910001/f9b7e4d8-0a5a-409d-a0f7-efd9ab44c138.PDF#page=124) | Apr 9, 2026, PDF p. 124, Stefani Wagley of Abilene. | One resident’s concerns about drought and work after construction. |
+| [City of Abilene lake levels](https://abilenetx.gov/saveabilenewater) | Nov 23, 2026, November lake levels for Lake Fort Phantom Hill and Hubbard Creek Lake. | Combined available capacity was 40.9%, rounded to 41%. The city updates the page. |
+| [Texas State Technical College graduation report](https://www.tstc.edu/blog/2026/06/23/first-cohort-of-data-center-operators-graduate-from-tstc/) | Jun 23, 2026, opening two paragraphs. | Twelve regional residents completed the first 15-week operator course in Abilene. The report establishes training completion only. |
 
 ## Education hub (Dhruv)
 

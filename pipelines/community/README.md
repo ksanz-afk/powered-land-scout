@@ -39,3 +39,18 @@ python run.py --check
 Rules (see README): official APIs or terms-compliant access only, no Facebook
 or Nextdoor scraping, aggregate at county level, short excerpts only, no
 personal data. Log every source in `docs/data-sources.md` first.
+
+## Taylor County discussion sample
+
+The reviewed input in `inputs/taylor-reviewed.json` lists each comment, its date and source, the selection rule, and its stance and topics. Five of the ten comments favor data centers and five oppose them. Water and jobs each appear in six comments. A comment can cover multiple topics. The testimony, lake levels and course completions on the Community tab are separate sources.
+
+From this directory, run:
+
+```sh
+python reviewed.py --check
+python run.py --check
+python -m unittest discover -s tests -v
+node --experimental-strip-types --test test_score.mjs
+```
+
+To regenerate the Taylor rows, run `python reviewed.py`. For another county, supply a reviewed input with `--case path/to/case.json` and retain any issue IDs used by proposals. Record sources in `docs/data-sources.md`. Open `/explore/48441/community` for Taylor or `/learn` for the education hub.

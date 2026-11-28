@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { PageHeader } from "@/components/page-header";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { getCounties } from "@/lib/data";
 import { ElectricityBrief } from "./electricity/electricity-brief";
 import "./electricity/brief.css";
@@ -12,41 +12,26 @@ export default async function LearnPage() {
   const counties = await getCounties();
 
   return (
-    <div className="space-y-4">
-      <PageHeader
-        title="Community education"
-        description="Understand the local questions around data centers."
-      />
-      <section aria-label="Explore the topics" className="space-y-4">
-        <div className="space-y-3">
-          <nav aria-label="Education topics" className="flex flex-wrap items-center gap-x-6 gap-y-2 border-b">
-            <button type="button" disabled className="cursor-not-allowed py-3 text-sm text-muted-foreground">What is a data center?</button>
-            <a href="#electricity" aria-current="true" className="border-b-2 border-foreground py-3 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-4">Electricity bills</a>
-            {["Water", "Noise"].map(topic => (
-              <button key={topic} type="button" disabled className="flex cursor-not-allowed items-center gap-2 py-3 text-sm text-muted-foreground">
-                {topic}
-              </button>
-            ))}
-          </nav>
-        </div>
-        <div id="electricity" className="scroll-mt-6">
-          <ElectricityBrief />
-        </div>
-      </section>
-      <section className="mt-8 space-y-3 border-t pt-6">
-        <h2 className="text-lg font-semibold">By community</h2>
-        <div className="grid gap-4 md:grid-cols-2">
-          {counties.map((c) => (
-              <Card key={c.fips}>
-                <CardHeader>
-                  <CardTitle>
-                    {c.name}, {c.state}
-                  </CardTitle>
-                  <CardDescription>Local explainers</CardDescription>
-                </CardHeader>
-              </Card>
+    <div className="space-y-6">
+      <PageHeader title="Community education" />
+      <details className="max-w-prose text-sm">
+        <summary className="w-fit cursor-pointer font-medium">What is a data center?</summary>
+        <p className="mt-2 leading-relaxed">A data center houses computers that store and process information. Those computers need electricity to run and cooling to carry away heat.</p>
+      </details>
+      <div id="electricity" className="scroll-mt-6">
+        <ElectricityBrief />
+      </div>
+      <section className="border-t pt-5">
+        <h2 className="mb-3 text-lg font-semibold">Explore a county</h2>
+        <ul className="grid gap-x-8 sm:grid-cols-2">
+          {counties.map((county) => (
+            <li key={county.fips}>
+              <Link href={`/explore/${county.fips}/community`} className="flex items-center justify-between border-b py-3 text-sm hover:underline">
+                {county.name}, {county.state}<span aria-hidden="true">→</span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
     </div>
   );
