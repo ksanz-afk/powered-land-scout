@@ -1,0 +1,205 @@
+{
+  "fips": "48441",
+  "title": "Abilene local-impact discussion sample",
+  "reviewed_on": "2026-11-25",
+  "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/datacenters/",
+  "selection_rule": "Within the previously verified 13-comment shortlist, include a comment only if it connects data-center development to at least one concrete local benefit, impact or project term: employment/training, housing, water/resources, roads/infrastructure, taxes/incentives or siting. General optimism about development and broad objections to AI or society alone do not qualify. Apply the same specificity requirement to support and opposition. Evaluate full comment context, not just its display excerpt.",
+  "selection_limit": "This filters a previously curated shortlist; it is not a comprehensive sample of the thread or a county survey. County residence is unverified. Counts represent distinct accounts, not verified distinct residents.",
+  "exclusions": [
+    {
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsi6lsy/",
+      "stance": "support",
+      "reason": "General optimism about Abilene's future; names no concrete local impact or project term."
+    },
+    {
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nt74ve9/",
+      "stance": "oppose",
+      "reason": "Broad claims about AI, society and government control; no specific local impact or project term."
+    },
+    {
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/o3nhus0/",
+      "stance": "oppose",
+      "reason": "General surveillance objection; no specific local impact or project term."
+    }
+  ],
+  "top_concerns": [
+    "water",
+    "housing",
+    "roads"
+  ],
+  "issues": [
+    {
+      "id": "iss-48441-1",
+      "topic": "water",
+      "category": "water",
+      "issue": "Water supply reliability",
+      "summary": "Discussion of cooling and local water use."
+    },
+    {
+      "id": "iss-48441-3",
+      "topic": "jobs",
+      "category": "jobs",
+      "issue": "Local jobs and training",
+      "summary": "Expected job benefits and who can access them."
+    },
+    {
+      "id": "iss-48441-4",
+      "topic": "housing",
+      "category": "housing",
+      "issue": "Housing affordability",
+      "summary": "Concerns about rent and housing availability."
+    },
+    {
+      "id": "iss-48441-2",
+      "topic": "roads",
+      "category": "infrastructure",
+      "issue": "Rural road condition",
+      "summary": "One selected comment mentions traffic and worn roads."
+    }
+  ],
+  "records": [
+    {
+      "id": "sig-48441-reviewed-01",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsgr6zh/",
+      "published_at": "2025-12-05",
+      "stance_on_dc": "support",
+      "topics": [
+        "water",
+        "roads",
+        "jobs",
+        "housing"
+      ],
+      "topic": "jobs",
+      "excerpt": "there are a lot of positives as well.",
+      "coding_reason": "Net-positive local assessment despite acknowledged impacts."
+    },
+    {
+      "id": "sig-48441-reviewed-02",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsnd0s8/",
+      "published_at": "2025-12-06",
+      "stance_on_dc": "support",
+      "topics": [
+        "jobs",
+        "education"
+      ],
+      "topic": "jobs",
+      "excerpt": "help educate and employ local students.",
+      "coding_reason": "Defends the local development and anticipated opportunities."
+    },
+    {
+      "id": "sig-48441-reviewed-03",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsh2ndp/",
+      "published_at": "2025-12-05",
+      "stance_on_dc": "support",
+      "topics": [
+        "jobs",
+        "water",
+        "taxes"
+      ],
+      "topic": "jobs",
+      "excerpt": "They hired what they could locally.",
+      "coding_reason": "Defends local hiring and resource use in context; evaluative support, not an explicit vote."
+    },
+    {
+      "id": "sig-48441-reviewed-04",
+      "source": "r/Abilene · self-described local data-center worker",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsjig9x/",
+      "published_at": "2025-12-06",
+      "stance_on_dc": "support",
+      "topics": [
+        "jobs",
+        "water",
+        "energy"
+      ],
+      "topic": "jobs",
+      "excerpt": "High-paying jobs are being given to locals",
+      "coding_reason": "Describes personal and local benefits; worker affiliation retained."
+    },
+    {
+      "id": "sig-48441-reviewed-06",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsi4j4r/",
+      "published_at": "2025-12-05",
+      "stance_on_dc": "support",
+      "topics": [
+        "jobs"
+      ],
+      "topic": "jobs",
+      "excerpt": "so that’s why I like the data centers.",
+      "coding_reason": "Explicitly favors the local data centers."
+    },
+    {
+      "id": "sig-48441-reviewed-07",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsgruj9/",
+      "published_at": "2025-12-05",
+      "stance_on_dc": "oppose",
+      "topics": [
+        "resources",
+        "siting"
+      ],
+      "topic": "other",
+      "excerpt": "No thanks I see no use",
+      "coding_reason": "Rejects local siting and resource use."
+    },
+    {
+      "id": "sig-48441-reviewed-09",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsgxh3u/",
+      "published_at": "2025-12-05",
+      "stance_on_dc": "oppose",
+      "topics": [
+        "jobs",
+        "housing",
+        "water"
+      ],
+      "topic": "jobs",
+      "excerpt": "it's the last thing abilene, or any surrounding towns, needed right now.",
+      "coding_reason": "Rejects the development's perceived local impacts."
+    },
+    {
+      "id": "sig-48441-reviewed-10",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsgyxfi/",
+      "published_at": "2025-12-05",
+      "stance_on_dc": "oppose",
+      "topics": [
+        "taxes",
+        "siting",
+        "water"
+      ],
+      "topic": "water",
+      "excerpt": "I don’t believe there are positives for a second.",
+      "coding_reason": "Rejects current siting and incentive tradeoff."
+    },
+    {
+      "id": "sig-48441-reviewed-12",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/o6dt1lr/",
+      "published_at": "2026-02-20",
+      "stance_on_dc": "oppose",
+      "topics": [
+        "water"
+      ],
+      "topic": "water",
+      "excerpt": "You guys keep wanting to give away natural resource for data",
+      "coding_reason": "Rejects the local water tradeoff."
+    },
+    {
+      "id": "sig-48441-reviewed-13",
+      "source": "r/Abilene · public commenter",
+      "source_url": "https://www.reddit.com/r/Abilene/comments/1pf0ac8/comment/nsi5we2/",
+      "published_at": "2025-12-05",
+      "stance_on_dc": "oppose",
+      "topics": [
+        "housing"
+      ],
+      "topic": "housing",
+      "excerpt": "rent prices should not be soaring as much as they are.",
+      "coding_reason": "Negative assessment of local housing impacts."
+    }
+  ]
+}
