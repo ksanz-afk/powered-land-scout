@@ -34,21 +34,13 @@ export function ElectricityBrief() {
       <section className="hero" aria-labelledby="main-title">
         <div className="hero-copy">
           <p className="eyebrow">
-            VIRGINIA EXAMPLE
+            Virginia
           </p>
           <h2 id="main-title" className="brief-title">
             Could data centers <em>affect my electricity bill?</em>
           </h2>
-          <p className="subtitle">
-            Understand the concern and what Microsoft promises.
-          </p>
         </div>
         <div className="hero-visual">
-          <div className="illustration-label">
-            <span className="tiny-line">
-            </span>
-            A SHARED ELECTRICITY SYSTEM
-          </div>
           <svg className="grid-scene" viewBox="0 0 560 320" role="img" aria-labelledby="scene-title scene-desc">
             <title id="scene-title">
               A data center and homes connected to a shared electricity grid
@@ -132,16 +124,16 @@ export function ElectricityBrief() {
       </section>
       <section className="practical-evidence" aria-label="Electricity concern and Microsoft commitment">
         <article className="practical-card">
-          <p className="practical-label">Virginia government review</p>
-          <h3>Growth could raise electricity costs.</h3>
-          <p>New demand can require more power plants and grid infrastructure.</p>
-          <button className="source-link" id="view-evidence" onClick={event => openEvidence("government", event.currentTarget)}>See the research <span aria-hidden="true">↗</span></button>
+          <p className="practical-label">Virginia JLARC · 2024</p>
+          <h3>Households could pay more.</h3>
+          <p>Virginia’s review found that adding power plants and transmission lines to serve data centers could raise household bills.</p>
+          <button className="source-link" id="view-evidence" onClick={event => openEvidence("government", event.currentTarget)}>See the bill estimate</button>
         </article>
         <article className="practical-card practical-promise">
-          <p className="practical-label">Microsoft · Company commitment</p>
+          <p className="practical-label">Microsoft · January 2026</p>
           <h3>“We’ll pay our way.”</h3>
-          <p>Microsoft commits to seeking rates that cover its power and infrastructure costs.</p>
-          <button className="source-link" onClick={event => openEvidence("company", event.currentTarget)}>Read the promise <span aria-hidden="true">↗</span></button>
+          <p>Microsoft says it will seek rates that cover the cost of powering and connecting its data centers.</p>
+          <button className="source-link" onClick={event => openEvidence("company", event.currentTarget)}>Read the promise</button>
         </article>
       </section>
       <dialog ref={evidenceDialog} id="evidence-dialog" aria-labelledby="evidence-title" onClose={() => evidenceOpener.current?.focus()}>

@@ -34,13 +34,12 @@ export const evidenceHighlights: Partial<Record<string, EvidenceHighlight>> = {
     ],
   },
   company: {
-    label: "Microsoft-reported contracts",
-    scope: "MISO · Midwest US",
-    value: "7.9 GW",
-    description: "New electricity generation contracted in MISO",
+    label: "Company commitment",
+    scope: "United States",
+    value: "Microsoft says it will pay for required grid upgrades.",
+    description: "That includes transmission lines and substations its data centers need to expand.",
     bullets: [
-      { label: "Scale", text: "Microsoft describes this as more than twice its current consumption." },
-      { label: "Grid upgrades", text: "Microsoft commits to paying for required transmission and substation improvements." },
+      { label: "Midwest example", text: "Microsoft says it contracted for 7.9 GW of new generating capacity in the MISO power market." },
     ],
     location: "PDF page 2, electricity section, second step: utility collaboration and the MISO example.",
     passages: [

@@ -19,7 +19,7 @@ export function EvidenceReader({ source }: { source: EvidenceSource }) {
           <div className="source-meta"><span className="source-tag">{highlight?.label ?? source.status ?? source.category}</span><span>{highlight?.scope ?? source.scope}</span></div>
           {highlight ? (
             <>
-              <h3 className="evidence-metric">{highlight.value}</h3>
+              <h3 className={source.id === "company" ? "evidence-question" : "evidence-metric"}>{highlight.value}</h3>
               <p className="metric-description">{highlight.description}</p>
               <ul className="metric-bullets">{highlight.bullets.map(bullet => (
                 <li key={bullet.label}><strong>{bullet.label}:</strong> {bullet.text}</li>
